@@ -1,0 +1,25 @@
+.input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group .input-group-text {
+    background: transparent;
+    border: none; /* Supprime le bord */
+    padding: 0.375rem 0.75rem; /* Ajuste le remplissage */
+  }
+  
+  .input-group .form-control {
+    border-radius: 2px; /* Supprime les bords arrondis */
+    padding-left: 2rem; /* Fait de la place pour l'icône */
+  }
+  
+  /* Optionnel : style pour l'icône */
+  .input-group .input-group-text i {
+    color: #007bff; /* Couleur de l'icône */
+  }
+
+  .active {
+    background-color: #edf1f9;
+  }
+  

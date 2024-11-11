@@ -1,0 +1,91 @@
+/* Style pour la table sticky headers */
+th.sticky-header {
+    position: sticky;
+    background: #edf1f9;
+    z-index: 3;
+    top: 0;
+  }
+  
+  th.nif {
+    left: 0;
+  }
+  
+  th.raison-sociale {
+    left: 108px;
+  }
+  
+  th.origine {
+    left: 255px;
+  }
+  
+  th.nature {
+    left: 347px;
+  }
+  
+  th.annee {
+    left: 427px;
+  }
+  
+  th.mois {
+    left: 499px;
+  }
+  
+  /* Style pour le body sticky cells */
+  td.sticky-cell {
+    position: sticky;
+    background: #fff;
+  }
+  
+  td.nif {
+    left: 0;
+  }
+  
+  td.raison-sociale {
+    left: 108px;
+    /* width: 200px;
+    display: inline-block;
+    height: auto; */
+  }
+  
+  td.origine {
+    left: 255px;
+  }
+  
+  td.nature {
+    left: 347px;
+  }
+  
+  td.annee {
+    left: 427px;
+  }
+  
+  td.mois {
+    left: 499px;
+  }
+
+td.index {
+    z-index: 1;
+}
+
+th.vide{
+  left: 0;
+  width: 100%;
+}
+
+.table {
+ 
+  width: 100%; /* Assurez-vous que la table occupe la largeur complète */
+}
+
+th.principale, td.principale {
+  width: 150px !important;
+}
+
+th.amende, td.amende {
+  width: 150px !important;
+}
+
+th.interet, td.interet {
+  width: 150px !important;
+}
+

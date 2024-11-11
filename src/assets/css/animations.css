@@ -1,0 +1,70 @@
+.dropdown-enter {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 300ms ease-out, opacity 300ms ease-out;
+  }
+  
+  .dropdown-enter-active {
+    max-height: 500px; /* Ajustez cette valeur selon la taille du contenu */
+    opacity: 1;
+  }
+  
+  .dropdown-exit {
+    max-height: 500px;
+    opacity: 1;
+    transition: max-height 300ms ease-out, opacity 300ms ease-out;
+  }
+  
+  .dropdown-exit-active {
+    max-height: 0;
+    opacity: 0;
+  }
+  
+  /* .fade-enter {
+    opacity: 0;
+    transform: scale(0.95); 
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .fade-exit {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+   */
+
+   /* Lors de l'apparition (glissement vers le bas + fade-in) */
+.fade-enter {
+    opacity: 0;
+    transform: translateY(-20px); /* Commence plus haut */
+    transition: opacity 300ms ease, transform 300ms ease;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0); /* Glisse vers sa position d'origine */
+  }
+  
+  /* Lors de la disparition (glissement vers le haut + fade-out) */
+  .fade-exit {
+    opacity: 1;
+    transform: translateY(0); /* Position d'origine */
+    transition: opacity 300ms ease, transform 300ms ease;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(-20px); /* Glisse vers le haut */
+  }
+  
